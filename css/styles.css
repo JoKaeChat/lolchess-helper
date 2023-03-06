@@ -2,6 +2,8 @@
 @import "reset.css";
 /*componenets*/
 @import "components/screen-header.css";
+@import "components/b-lnb.css";
+@import "components/advertise.css";
 
 @viewport {
     zoom:1;
@@ -14,7 +16,7 @@
 body{
     font-family : 'Noto Sans';
     height:1000vh;
-    padding: 0px 190px;
+   
     background-color: #222222;
 }
 
