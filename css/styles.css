@@ -2,7 +2,6 @@
 @import "reset.css";
 /*componenets*/
 @import "components/screen-header.css";
-@import "components/b-lnb.css";
 @import "components/advertise.css";
 
 @viewport {
