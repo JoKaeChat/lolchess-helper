@@ -1,0 +1,12 @@
+.hidden{
+    display: none;
+}
+
+.b-locale-list{
+    position : absolute;
+    display: flex;
+    flex-direction: column;
+    color : white;
+    z-index : 10;
+}
+

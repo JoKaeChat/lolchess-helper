@@ -3,6 +3,7 @@
 /*componenets*/
 @import "components/screen-header.css";
 @import "components/advertise.css";
+@import "components/locale.css";
 
 @viewport {
     zoom:1;
