@@ -5,13 +5,6 @@
 @import "components/advertise.css";
 @import "components/locale.css";
 
-@viewport {
-    zoom:1;
-    width:device-width;
-    user-zoom:no;
-    max-zoom:1;
-    min-zoom:1;
-}
 
 body{
     font-family : 'Noto Sans';
@@ -20,3 +13,6 @@ body{
     background-color: #222222;
 }
 
+.hidden{
+    display : hidden;
+}
