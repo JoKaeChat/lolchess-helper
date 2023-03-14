@@ -1,29 +1,38 @@
 .screen-header__lnb{
-    display: flex;
-    align-items: center;
-    padding : 10px;
     position : relative;
-    overflow: hidden;
+    height : 56px;
 }
 
 
 .lnb-container{
-    display: flex;   
-    flex-direction: column;
+    display: flex;  
+    position : absolute;
+    width : 100%;
+    box-sizing : border-box; 
+    
+    
 }
 
+.lnb-container__part{
+     flex-direction: column;
+     padding-left : 15px;
+     padding-right : 15px;
+     
+}
 
 .lnb-list-container{
     display: flex none;
     flex-direction: column;
-    background-color: aqua;
-
+    color : white;
 }
+
+
+.lnb-title{
+    padding-top : 20px;
+    padding-bottom : 20px;
+}
+
 
 .lnb-list{
-    padding : 5px;
-}
-
-.lnb-title:hover ~.lnb-list-container{
-    display: visible;
+    padding : 10px 0;
 }

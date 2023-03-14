@@ -8,8 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>롤체도우미</title>
 </head>
-<body class="body-screen">
+<body>
     <header class ="screen-header">
+      <div class = "screen-header-padding"> 
         <div class="screen-header__gnb">
             <div class="screen-header__gnb__menu">
                 <a href="#" ><span class="bold white">DAK.GG</span></a>
@@ -42,9 +43,9 @@
 
         <div class="screen-header__middle">
             <div class="screen-header__middle__column">
-                <button class ="screen-header__middle__filter">
+                <button class ="screen-header__middle__filter fa-lg">
                     <i class="fa-solid fa-filter"></i>
-                    <i class="fa-solid fa-caret-down white"></i>
+                    <i class="fa-solid fa-caret-down white fa-xs"></i>
                 </button>
                 <div class="screen-header__middle__filter__list hidden">
                     <a href ="https://www.twitch.tv/?lang=ko">트위치</a>
@@ -52,6 +53,7 @@
                 </div>
                 <div class ="screen-header__middle__title white">롤체도우미</div>
             </div>
+
             <div class="screen-header__middle__column">
               <div class="screen-header__middle__column__search">
                  <button class ="search-button">
@@ -69,18 +71,35 @@
         </div>
 
         <div class="screen-header__lnb">
+
             <div class ="lnb-container">
+              <div class ="lnb-container__part">
                 <div class = "lnb-title">추천 메타</div>
                 <div class = "lnb-list-container">
                     <div class ="lnb-list">추천 메타</div>
                     <div class ="lnb-list">유튜버 가이드</div>
                     <div class ="lnb-list">아이템 통계</div>
                 </div>
+              </div>
+
+              <div class ="lnb-container__part">
+                <div class = "lnb-title">추천 메타2</div>
+                <div class = "lnb-list-container">
+                    <div class ="lnb-list">추천 메타2</div>
+                    <div class ="lnb-list">유튜버 가이드2</div>
+                    <div class ="lnb-list">아이템 통계2</div>
+                </div>
+              </div>
+
+              
             </div>
+
+           
+           
         </div>
        
      
-        
+      </div>  
     </header>
 
 
@@ -131,7 +150,7 @@
     
 
     <script src="https://kit.fontawesome.com/4315a69b3d.js" crossorigin="anonymous"> </script>
-    <script src ="myScript.js"></script>
+    <script src ="button.js"></script>
 </body>
 
 

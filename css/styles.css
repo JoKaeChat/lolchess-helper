@@ -9,7 +9,9 @@
 
 
 body{
-    font-family : 'Noto Sans';
+    font-family : 'Noto Sans';    
+    height : 1000vh; 
+
 }
 
 .hidden{
@@ -24,7 +26,3 @@ body{
     color : white;
 }
 
-.body-screen{
-    height : 1000vh; 
-    
-}
