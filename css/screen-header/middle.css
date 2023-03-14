@@ -1,0 +1,146 @@
+.screen-header__middle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position : relative;
+    padding : 10px;
+}
+
+.screen-header__middle__filter{
+    width : 70px;
+    height : 35px;
+    background-color: var(--black);
+    padding : 5px 15px;
+    border-radius : 10px;
+    margin-right : 10px;
+    box-sizing: border-box;
+    cursor : pointer;
+}
+
+.screen-header__middle__column{
+    display: flex;
+}
+
+.screen-header__middle__filter__list{
+    position : absolute;
+    left : 13px;
+    top : 50px;
+    background-color: var(--black);
+    border-radius: 10px;
+    color : white;
+    display: flex;
+    flex-direction: column;
+    z-index : 10;
+    padding : 10px 5px;
+    box-sizing: border-box;
+}
+
+.screen-header__middle__filter__list>a {
+    margin-bottom : 5px;
+}
+
+.screen-header__middle__filter__list>a:last-child{
+    margin-bottom : 0;
+}
+
+
+.screen-header__middle__filter i:first-child{
+    color : #F8AF38;
+    margin-right : 10px
+}
+
+.screen-header__middle__title{
+    font-size : 15px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.screen-header__middle__column__search{
+    display: flex;
+
+}
+
+.screen-header__middle__column__search{
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+
+.search-button{
+    padding : 7px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    background-color: #2A2C33;
+    border : none;
+    cursor : pointer;
+    
+}
+
+.search-bar{
+    display: flex;   
+    background-color: #2D2F37;
+}
+
+.search-bar__button{
+   
+    background-color: #2D2F37;  
+    border : none;
+    cursor : pointer;
+}
+
+
+.search-bar>input{
+    background-color: #2D2F37;
+    border : none;
+}
+
+.search-bar>input::placeholder{
+    color :#989EB1;
+}
+
+
+.search-country{
+    width : 320px;
+    height : 240px;
+    position : absolute;
+    z-index : 10;
+    top : 33%;
+    left : 33%;
+    border : 1px solid var(--gray);
+    border-radius : 5px;
+}
+
+.search-country__header{
+    display: flex;
+    justify-content: space-between;
+    height : 14%;
+    align-items: center;
+    width : 320px;
+    height : 40px;
+}
+
+.search-country__container-line{
+    display : flex;
+    height : 40px;
+    width : 320px;
+}
+
+.country-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border : 1px solid var(--gray);
+    width : 33%;    
+}
+
+.search-country__header__cancel{
+    border : none;
+    background-color: transparent;
+    color : var(--gray);
+    cursor : pointer;
+}
+
+.KR{
+    background-color:  var(--gray);
+}

@@ -1,18 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap');
 @import "reset.css";
-/*componenets*/
-@import "components/screen-header.css";
-@import "components/advertise.css";
-@import "components/locale.css";
+@import "variables.css";
+
+@import "screen-header/gnb.css";
+@import "screen-header/lnb.css";
+@import "screen-header/middle.css";
+
 
 
 body{
     font-family : 'Noto Sans';
-    height:1000vh;
-   
-    background-color: #222222;
 }
 
 .hidden{
-    display : hidden;
+    display : none;
+}
+
+.bold{
+    font-weight : 700;
+}
+
+.white{
+    color : white;
+}
+
+.body-screen{
+    height : 1000vh; 
+    
 }

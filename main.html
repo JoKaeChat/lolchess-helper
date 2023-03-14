@@ -9,15 +9,123 @@
     <title>롤체도우미</title>
 </head>
 <body class="body-screen">
-    <header class ="screen-header screen-header-bg">
-        
+    <header class ="screen-header">
+        <div class="screen-header__gnb">
+            <div class="screen-header__gnb__menu">
+                <a href="#" ><span class="bold white">DAK.GG</span></a>
+                <div class="divider"></div>
+                <a href="#" ><span class="bold white">전적 검색</span></a>
+                <div class="divider"></div>
+                <a href="#"><span>e스포츠 일정</span></a>
+                <div class="divider"></div>
+                <a href="#"><span>레벨업지지</span></a>
+                <div class="divider"></div>
+                <a href="#"><span>WCG</span></a>
+                <div class="divider"></div>
+                <a href="#"><span>게임코치온라인</span></a>
+                <div class="divider"></div>
+                <a href="#"><span>GCL</span></a>
+            </div>
+            <div class="screen-header__gnb__locale">
+                <button class = "locale-button">
+                    <i class="fa-solid fa-globe white"></i>
+                    <span class="white">한국어</span>
+                    <i class="fa-solid fa-caret-down white"></i>
+                </button>
+                <div class = "locale-list hidden">
+                    <span>일본어</span>
+                    <span>중국어</span>
+                    <span>영어</span>
+                </div>
+            </div>
+        </div>
 
+        <div class="screen-header__middle">
+            <div class="screen-header__middle__column">
+                <button class ="screen-header__middle__filter">
+                    <i class="fa-solid fa-filter"></i>
+                    <i class="fa-solid fa-caret-down white"></i>
+                </button>
+                <div class="screen-header__middle__filter__list hidden">
+                    <a href ="https://www.twitch.tv/?lang=ko">트위치</a>
+                    <a href = "https://www.youtube.com/?gl=KR&hl=ko">유튜브</a>
+                </div>
+                <div class ="screen-header__middle__title white">롤체도우미</div>
+            </div>
+            <div class="screen-header__middle__column">
+              <div class="screen-header__middle__column__search">
+                 <button class ="search-button">
+                    <span class ="white">KR</span>
+                    <i class="fa-solid fa-arrow-rotate-right white"></i>
+                 </button>   
+                
+                <form class = "search-bar">
+                    <input type="text" placeholder="소환사 검색"/>
+                    <button class="search-bar__button"><i class="fa-solid fa-magnifying-glass white"></i></button>
+                </form>
+            </div>          
+            </div>
+
+        </div>
+
+        <div class="screen-header__lnb">
+            <div class ="lnb-container">
+                <div class = "lnb-title">추천 메타</div>
+                <div class = "lnb-list-container">
+                    <div class ="lnb-list">추천 메타</div>
+                    <div class ="lnb-list">유튜버 가이드</div>
+                    <div class ="lnb-list">아이템 통계</div>
+                </div>
+            </div>
+        </div>
        
      
         
     </header>
 
 
+
+
+
+
+
+    <div class = "search-country hidden">
+        <div class ="search-country__header">
+            <div class ="search-country__header__title">서버 선택</div>
+            <button class ="search-country__header__cancel"><i class="fa-solid fa-x"></i></button>
+        </div>
+        
+        <div class = "search-country__container-line">
+                <div class ="country-name">BR</div class ="country-name">
+                <div class ="country-name">EUNE</div class ="country-name">
+                <div class ="country-name">EUW</div class ="country-name">
+        </div>
+
+            <div class = "search-country__container-line">
+                <div class ="country-name">JP</div class ="country-name">
+                <div class ="country-name KR">KR</div class ="country-name">
+                <div class ="country-name">LAN</div class ="country-name">
+            </div>
+
+            <div class = "search-country__container-line">
+                <div class ="country-name">LAS</div class ="country-name">
+                <div class ="country-name">NA</div class ="country-name">
+                <div class ="country-name">OCE</div class ="country-name">
+            </div>
+
+            <div class = "search-country__container-line">
+                <div class ="country-name">TR</div class ="country-name">
+                <div class ="country-name">RU</div class ="country-name">
+                <div class ="country-name">PH</div class ="country-name">
+            </div>
+
+            <div class = "search-country__container-line">
+                <div class ="country-name">SG</div class ="country-name">
+                <div class ="country-name">TH</div class ="country-name">
+                <div class ="country-name">TW</div class ="country-name">
+            </div>
+     
+    </div>
 
 
     

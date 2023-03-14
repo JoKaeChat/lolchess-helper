@@ -1,0 +1,29 @@
+.screen-header__lnb{
+    display: flex;
+    align-items: center;
+    padding : 10px;
+    position : relative;
+    overflow: hidden;
+}
+
+
+.lnb-container{
+    display: flex;   
+    flex-direction: column;
+}
+
+
+.lnb-list-container{
+    display: flex none;
+    flex-direction: column;
+    background-color: aqua;
+
+}
+
+.lnb-list{
+    padding : 5px;
+}
+
+.lnb-title:hover ~.lnb-list-container{
+    display: visible;
+}
