@@ -9,8 +9,8 @@
     <title>롤체도우미</title>
 </head>
 <body>
+    
     <header class ="screen-header">
-      <div class = "screen-header-padding"> 
         <div class="screen-header__gnb">
             <div class="screen-header__gnb__menu">
                 <a href="#" ><span class="bold white">DAK.GG</span></a>
@@ -29,9 +29,9 @@
             </div>
             <div class="screen-header__gnb__locale">
                 <button class = "locale-button">
-                    <i class="fa-solid fa-globe white"></i>
+                    <i class="fa-solid fa-globe white" "></i>
                     <span class="white">한국어</span>
-                    <i class="fa-solid fa-caret-down white"></i>
+                    <i class="fa-solid fa-caret-down white locale-rotate"></i>
                 </button>
                 <div class = "locale-list hidden">
                     <span>일본어</span>
@@ -45,11 +45,11 @@
             <div class="screen-header__middle__column">
                 <button class ="screen-header__middle__filter fa-lg">
                     <i class="fa-solid fa-filter"></i>
-                    <i class="fa-solid fa-caret-down white fa-xs"></i>
+                    <i class="fa-solid fa-caret-down white fa-xs filter-rotate"></i>
                 </button>
                 <div class="screen-header__middle__filter__list hidden">
-                    <a href ="https://www.twitch.tv/?lang=ko">트위치</a>
-                    <a href = "https://www.youtube.com/?gl=KR&hl=ko">유튜브</a>
+                    <a href ="https://www.twitch.tv/?lang=ko"><i class="fa-brands fa-twitch"></i> 트위치</a>
+                    <a href = "https://www.youtube.com/?gl=KR&hl=ko"><i class="fa-brands fa-youtube"></i> 유튜브</a>
                 </div>
                 <div class ="screen-header__middle__title white">롤체도우미</div>
             </div>
@@ -72,7 +72,9 @@
 
         <div class="screen-header__lnb">
 
+            <div class ="lnb-container__bg" ></div>
             <div class ="lnb-container">
+                
               <div class ="lnb-container__part">
                 <div class = "lnb-title">추천 메타</div>
                 <div class = "lnb-list-container">
@@ -83,42 +85,86 @@
               </div>
 
               <div class ="lnb-container__part">
-                <div class = "lnb-title">추천 메타2</div>
+                <div class = "lnb-title bold line">메타 통계 <span class="N">N</span></div>
                 <div class = "lnb-list-container">
-                    <div class ="lnb-list">추천 메타2</div>
-                    <div class ="lnb-list">유튜버 가이드2</div>
-                    <div class ="lnb-list">아이템 통계2</div>
+                    <div class ="lnb-list">덱 리스트</div>
                 </div>
               </div>
 
-              
+              <div class ="lnb-container__part">
+                <div class = "lnb-title">게임 가이드</div>
+                <div class = "lnb-list-container">
+                    <div class ="lnb-list">패치노트</div>
+                    <div class ="lnb-list">라운드 정보</div>
+                    <div class ="lnb-list">골드/경험치</div>
+                    <div class ="lnb-list">리롤 확률</div>
+                    <div class ="lnb-list">피해량 공식</div>
+                    <div class ="lnb-list">단축키</div>
+                    <div class ="lnb-list">꼬마 전설이</div>
+                </div>
+              </div>
+
+              <div class ="lnb-container__part">
+                <div class = "lnb-title">시즌 가이드</div>
+                <div class = "lnb-list-container">
+                    <div class ="lnb-list">챔피언</div>
+                    <div class ="lnb-list">시너지</div>
+                    <div class ="lnb-list">아이템</div>
+                    <div class ="lnb-list">증강</div>
+                    <div class ="lnb-list">지하세계 보상</div>
+                    <div class ="lnb-list yellow">시즌 성적표</div>
+
+                </div>
+              </div>
+
+              <div class ="lnb-container__part">
+                <div class = "lnb-title greenyellow">시즌 8.5</div>
+                
+              </div>
+
+              <div class ="lnb-container__part">
+                <div class = "lnb-title">랭킹</div>
+                <div class = "lnb-list-container">
+                    <div class ="lnb-list">순위표</div>
+                    <div class ="lnb-list">즐겨찾기</div>
+                </div>
+              </div>
+
+              <div class ="lnb-container__part">
+                <div class = "lnb-title">팀 빌더</div>
+                <div class = "lnb-list-container">
+                    <div class ="lnb-list">배치툴</div>
+                    <div class ="lnb-list">시뮬레이터</div>
+                </div>
+              </div>
+
+              <div class ="lnb-container__part">
+                <div class = "lnb-title">커뮤니티</div>
+                <div class = "lnb-list-container">
+                    <div class ="lnb-list">게시판</div>
+                    <div class ="lnb-list">팁/공략</div>
+                    <div class ="lnb-list">홍보 게시판</div>
+                </div>
+              </div>
+
             </div>
 
            
            
         </div>
-       
-     
-      </div>  
     </header>
 
-
-
-
-
-
-
     <div class = "search-country hidden">
-        <div class ="search-country__header">
+          <div class ="search-country__header">
             <div class ="search-country__header__title">서버 선택</div>
             <button class ="search-country__header__cancel"><i class="fa-solid fa-x"></i></button>
-        </div>
+          </div>
         
-        <div class = "search-country__container-line">
+          <div class = "search-country__container-line">
                 <div class ="country-name">BR</div class ="country-name">
                 <div class ="country-name">EUNE</div class ="country-name">
                 <div class ="country-name">EUW</div class ="country-name">
-        </div>
+          </div>
 
             <div class = "search-country__container-line">
                 <div class ="country-name">JP</div class ="country-name">
@@ -143,8 +189,11 @@
                 <div class ="country-name">TH</div class ="country-name">
                 <div class ="country-name">TW</div class ="country-name">
             </div>
-     
     </div>
+
+    
+
+
 
 
     

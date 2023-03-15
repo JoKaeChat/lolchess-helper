@@ -1,10 +1,9 @@
 .screen-header{
-    background: no-repeat url("https://www.kevinsawford.com/images/uploads/galleries/_small_2x/Brown_hare_at_sunset-66407.jpg");
-    background-size:cover;
-    
+    background: #F6B35A;
     align-items: center;
     box-sizing: border-box;
     flex-shrink: 0;
+    
 }
 
 .screen-header__gnb{
@@ -28,6 +27,7 @@
 
 .screen-header__gnb__menu>a{
     color : var(--gray);
+    transition : color 0.3s ease-in-out;
    
 }
 
@@ -53,6 +53,10 @@
     
 }
 
+.screen-header__gnb__locale{
+    box-sizing: border-box;
+}
+
 .locale-button{
     border : none;
     background-color: transparent;
@@ -67,7 +71,7 @@
     flex-direction: column;
     color : white;
     right : 15px;
-    top : 30px;    
+    top : 35px;    
     padding : 7px 10px;   
     border-radius: 5px;
     z-index : 10;

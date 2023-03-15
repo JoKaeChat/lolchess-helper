@@ -2,10 +2,13 @@
 @import "reset.css";
 @import "variables.css";
 
+/*screen header*/
 @import "screen-header/gnb.css";
 @import "screen-header/lnb.css";
 @import "screen-header/middle.css";
 
+/*다람쥐*/
+@import "adv.css";
 
 
 body{
@@ -26,3 +29,6 @@ body{
     color : white;
 }
 
+.line{
+    text-decoration: solid underline var(--black) 2px;
+}
