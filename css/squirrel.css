@@ -1,0 +1,9 @@
+.squirrel img{
+    width : 100%;
+    height : 270px;
+}
+
+.squirrel{
+    display: flex;
+    justify-content: center;
+}
