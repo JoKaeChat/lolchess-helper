@@ -8,7 +8,10 @@
 @import "screen-header/middle.css";
 
 /*다람쥐*/
-@import "squirrel.css";
+@import "wallpaper.css";
+
+/*item filter*/
+@import "item-filter.css";
 
 
 body{

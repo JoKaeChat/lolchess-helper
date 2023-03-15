@@ -1,9 +1,9 @@
-.squirrel img{
+.wallpaper img{
     width : 100%;
     height : 270px;
 }
 
-.squirrel{
+.wallpaper{
     display: flex;
     justify-content: center;
 }
