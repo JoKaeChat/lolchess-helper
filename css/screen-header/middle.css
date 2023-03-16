@@ -39,6 +39,7 @@
     padding : 15px 5px;
     box-sizing: border-box;
     padding-left : 20px;
+    padding-right : 20px;
     
 }
 
@@ -135,6 +136,7 @@
     left : 33%;
     border : 1px solid var(--gray);
     border-radius : 5px;
+    background-color: white;
 }
 
 .search-country__header{

@@ -7,12 +7,10 @@
 @import "screen-header/lnb.css";
 @import "screen-header/middle.css";
 
-/*다람쥐*/
+/*else*/
 @import "wallpaper.css";
-
-/*item filter*/
 @import "item-filter.css";
-
+@import "combination-container.css";
 
 body{
     font-family : 'Noto Sans';    

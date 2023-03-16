@@ -1,3 +1,5 @@
+
+
 .item-filter{
     margin-top : 25px;
 }
@@ -35,5 +37,28 @@
 
 .item-filter__container-row__container__icon-row{
     color  : var(--gray);
+    display:  flex;
+}
+
+
+.item-button{
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-button img{
+    
+    height : 30px;
+    width : 30px;
+}
+
+.item-button:active{
+    border : 2px solid red;
+}
+
+.item-button span{
+    font-size : 10px;
 }
 

@@ -48,8 +48,8 @@
                     <i class="fa-solid fa-caret-down white fa-xs filter-rotate"></i>
                 </button>
                 <div class="screen-header__middle__filter__list hidden">
-                    <a href ="https://www.twitch.tv/?lang=ko"><i class="fa-brands fa-twitch"></i> 트위치</a>
-                    <a href = "https://www.youtube.com/?gl=KR&hl=ko"><i class="fa-brands fa-youtube"></i> 유튜브</a>
+                    <a href ="https://www.twitch.tv/?lang=ko" target='_blank'><i class="fa-brands fa-twitch"></i> 트위치</a>
+                    <a href = "https://www.youtube.com/?gl=KR&hl=ko" target='_blank'><i class="fa-brands fa-youtube"></i> 유튜브</a>
                 </div>
                 <div class ="screen-header__middle__title white">롤체도우미</div>
             </div>
@@ -207,7 +207,25 @@
                 </div> 
                 <div class="item-filter__container-row__container">
                     <div class ="item-filter__container-row__container__icon-row">
-                        1
+                        <button class="item-button" onclick="filterSelection('arcaneGauntlet')">
+                            <img src="https://cdn.lolchess.gg/upload/images/items/ArcaneGauntlet_1658738730-ArcaneGauntlet_80.jpg"/>
+                            <span>보석 건틀릿</span>
+                        </button>
+                        <button class="item-button" onclick="filterSelection('blue')">
+                            <img src="https://cdn.lolchess.gg/images/tft/item/BlueBuff.png"/>
+                            <span>블루</span>
+                        </button>
+
+                        <button class="item-button" onclick="filterSelection('lastWhisper')">
+                            <img src="https://cdn.lolchess.gg/upload/images/items/LastWhisper_1642015257.png"/>
+                            <span>최후의 속삭임</span>
+                        </button>
+
+                        <button class="item-button" onclick="filterSelection('shojin')">
+                            <img src="https://cdn.lolchess.gg/upload/images/items/SpearofShojin_1669258937-spear_of_shojin.png"/>
+                            <span>쇼진의 창</span>
+                        </button>
+
                     </div>
                     <div class ="item-filter__container-row__container__icon-row">
                         2
@@ -218,18 +236,98 @@
                 </div>
                 
             </div>
-           
+            <div class ="item-filter__container-row">
+                <div>
+                    <h5 class="item-filter__container-row__title">문양</h5>
+                </div>
+                <div class="item-filter__container-row__container">
+                    <div class ="item-filter__container-row__container__icon-row">
+                        <button class="item-button" onclick="filterSelection('heart')">
+                            <img src="https://cdn.lolchess.gg/upload/images/items/HeartEmblemItem_1668223057-Heart.png"/>
+                            <span>선의</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
         </div>
+
 
         </div>
     </div>
 
+    <div class ="combination-container">
+      <div class ="combination blue gadgeteen">  
+            <div class="combination-title">
+                <span>기계유망주 조이 누누</span>
+            </div>
+            <div class ="combination-screen">
+                <div class ="combination-screen__column">
+                    <div class ="character 3star zoe">
+                        <img src="https://cdn.lolchess.gg/upload/images/champions/Zoe_1668168742-Zoe.jpg"/>
+                    </div>
+                    <div class ="character 5star nunu">
+                        <img src="https://cdn.lolchess.gg/upload/images/champions/Nunu_1668167875-Nunu.jpg"/>
+                    </div>
+                </div>
+                <div class ="combination-screen__column">
+
+                </div>
+            </div>
+       </div>
+       
+       <div class ="combination blue heart">  
+        <div class="combination-title">
+            <span>선의 조이 소라카</span>
+        </div>
+        <div class ="combination-screen">
+            <div class ="combination-screen__column">
+                <div class ="character 3star zoe">
+                    <img src="https://cdn.lolchess.gg/upload/images/champions/Zoe_1668168742-Zoe.jpg"/>
+                </div>
+                <div class ="character 4star soraka">
+                    <img src="https://cdn.lolchess.gg/upload/images/champions/Soraka_1668168584-Soraka.jpg"/>
+                </div>
+            </div>
+            <div class ="combination-screen__column">
+
+            </div>
+        </div>
+   </div>
+
+       <div class ="combination shojin animal-squad">  
+        
+            <div class="combination-title">
+                <span>동물특공대 미스포춘</span>
+            </div>
+            <div class ="combination-screen">
+                <div class ="combination-screen__column">
+                    <div class ="character 4star misfortune">
+                        <img src="https://cdn.lolchess.gg/upload/images/champions/MissFortune_1668168442-MissFortune.jpg"/>
+                    </div>
+                    <div class ="character 3star riven">
+                        <img src="https://cdn.lolchess.gg/upload/images/champions/Riven_1668168390-Riven.jpg"/>
+                    </div>
+                    
+
+                </div>
+                <div class ="combination-screen__column">
+
+                </div>
+
+            </div>
+        
+       </div>
+       
+
+    </div>
 
 
     
 
     <script src="https://kit.fontawesome.com/4315a69b3d.js" crossorigin="anonymous"> </script>
     <script src ="button.js"></script>
+    <script src = "button-item.js"></script>
 </body>
 
 
