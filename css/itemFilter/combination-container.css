@@ -5,7 +5,7 @@
 .combination{
     margin-top : 18px;
     border : 1px solid green;
-    display : none;
+    display : block;
 }
 
 .combination-title{
@@ -38,9 +38,3 @@
     height : 45px;
 }
 
-
-
-
-.show{
-    display : block;
-}
