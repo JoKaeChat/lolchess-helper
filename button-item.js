@@ -1,5 +1,8 @@
 let searches = [];
 const SEARCH_KEY = "search";
+const x= document.getElementsByClassName("combination");
+
+
 
 
 function saveSEarches(){
@@ -7,64 +10,50 @@ function saveSEarches(){
 }
 
 function filterSelection(item){
-    let i,j;
-   
-    const savedSearches =localStorage.getItem(SEARCH_KEY);
-    
 
-    if( savedSearches == null){
-        console.log("비었음.")
+    let i,j;
+
+    if( searches === null){
         searches.push(item);
-        console.log(searches);
     }
 
     else{
-        const parsedSearches = JSON.parse(savedSearches);
-        searches = parsedSearches;
+        
         const index =searches.indexOf(item);
         if(index > -1){
-            console.log("대상 삭제");
             searches.splice(index,1);
         }
         else{
-            console.log("대상 추가");
             searches.push(item);
         }
     }
-    
-    const x= document.getElementsByClassName("combination");
+    console.log(searches);
 
-    if(searches !== null){
+    if(searches.length ===0){
+        clearSearch();
+    }
+
+    if(searches.length !== 0){
       for(i=0;i<x.length;i++){
         for(j=0; j<searches.length; j++){
              if(x[i].classList.contains(searches[j])){
-                x[i].classList.remove("hidden");
+                x[i].classList.add("active");
              } 
              else{
-               x[i].classList.add("hidden");
+               x[i].classList.remove("active");
                break;
              }
         }  
       }
     } 
+}
 
-    else{ 
-        for(i=0;i<x.length;i++){
-            x[i].classList.remove("hidden");
-        }
+function clearSearch(){
+    searches.length = 0;
+    for(i=0;i<x.length;i++){
+        x[i].classList.add("active");
     }
-
-    saveSEarches();
 }
 
-
-const itemBtns = document.getElementsByClassName("item-button");
-for(let i = 0; i<itemBtns.length; i++){
-    itemBtns[i].addEventListener("click",function(){
-        itemBtns[i].classList.toggle("active");
-    })
-}
-
-
-
-
+const clear = document.querySelector(".clear");
+clear.addEventListener("click",clearSearch);

@@ -1,10 +1,8 @@
 //locale button
 const localeButton = document.querySelector(".locale-button");
-//filter button
-const downTriangle = document.querySelector(".fa-caret-down");
 const filter = document.querySelector(".screen-header__middle__filter");
-const filterList =document.querySelector(".screen-header__middle__filter__list");
 //search button
+
 const searchButton = document.querySelector(".search-button");
 const searchCancel = document.querySelector(".search-country__header__cancel"); 
 const searchCountry = document.querySelector(".search-country");
