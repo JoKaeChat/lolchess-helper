@@ -2,9 +2,6 @@ let searches = [];
 const SEARCH_KEY = "search";
 const x= document.getElementsByClassName("combination");
 
-
-
-
 function saveSEarches(){
     localStorage.setItem(SEARCH_KEY,JSON.stringify(searches));
 }
@@ -13,12 +10,11 @@ function filterSelection(item){
 
     let i,j;
 
+    // 검색
     if( searches === null){
         searches.push(item);
     }
-
     else{
-        
         const index =searches.indexOf(item);
         if(index > -1){
             searches.splice(index,1);
@@ -27,7 +23,6 @@ function filterSelection(item){
             searches.push(item);
         }
     }
-    console.log(searches);
 
     if(searches.length ===0){
         clearSearch();
@@ -57,3 +52,7 @@ function clearSearch(){
 
 const clear = document.querySelector(".clear");
 clear.addEventListener("click",clearSearch);
+
+
+
+

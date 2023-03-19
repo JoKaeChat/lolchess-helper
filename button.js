@@ -8,7 +8,6 @@ const searchCancel = document.querySelector(".search-country__header__cancel");
 const searchCountry = document.querySelector(".search-country");
 
 
-
 function dropdownClick(event){
     
      event.preventDefault();
@@ -47,15 +46,14 @@ function dropdownClick(event){
      }
 }
 
-
 function searchButtonClick(event){
      event.preventDefault(event);
      searchCountry.classList.toggle("hidden");
 }
 
-
 localeButton.addEventListener("click",dropdownClick);
 filter.addEventListener("click",dropdownClick);
 searchButton.addEventListener("click",searchButtonClick);
 searchCancel.addEventListener("click",searchButtonClick);
+
 

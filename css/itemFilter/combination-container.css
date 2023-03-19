@@ -23,6 +23,7 @@
 
 
 .combination-screen__column{
+    padding-left : 160px;
     display: flex;
     align-items: center;
     height : 140px;
@@ -30,6 +31,14 @@
 
 .character{
     margin-right : 10px;
+    display : flex;
+    flex-direction: column;
+    gap : 6px;
+    box-sizing: border-box;
+    padding-top : 9px;
+    position : relative;
+
+
 }
 
 .character img{
@@ -37,3 +46,44 @@
     height : 45px;
 }
 
+.threeStar{
+ border : 3px solid #207AC7;
+ border-radius : 10px;
+}
+
+.fourStar{
+    border : 3px solid #C440DA;
+    border-radius : 10px;
+}
+
+.fiveStar{
+    border : 3px solid  #FFB93B;
+    border-radius : 10px;
+}
+
+.twoStar{
+    border : 3px solid  #2A6654;
+    border-radius : 10px;
+}
+
+.oneStar{
+    border : 3px solid #77736E;
+    border-radius : 10px;
+}
+
+.item-slot{
+    display: inline-flex;
+    width : 100%;
+    
+    
+}
+
+.item-slot img{
+    width : 17px;
+    height : 17px;
+}
+
+.empty-item{
+    width : 100%;
+    height : 17px;
+}
