@@ -10,6 +10,10 @@
     overflow: initial;
 }
 
+.screen-header__lnb__container{
+    margin : 0 auto;
+    width : 1140px;
+}
 
 .lnb-container__bg{
     position : absolute;

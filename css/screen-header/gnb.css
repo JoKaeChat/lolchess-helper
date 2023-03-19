@@ -7,16 +7,19 @@
 }
 
 .screen-header__gnb{
-    padding : 0 190px;
+    border-bottom: 1px solid var(--gray);
 }
 
 
-.screen-header__gnb{
+.screen-header__gnb__container{
     display: flex;
     justify-content: space-between;
     padding : 12px;
     position : relative;
-    border-bottom: 1px solid var(--gray);
+   
+    margin : 0 auto;
+    width : 1140px;
+
 }
 
 .screen-header__gnb__menu{
@@ -71,16 +74,18 @@
     flex-direction: column;
     color : white;
     right : 15px;
-    top : 35px;    
+    top : 40px;    
     padding : 7px 10px;   
     border-radius: 5px;
     z-index : 10;
     font-size : 15px;
+    padding-left : 15px;
+    padding-right : 20px;
     
 }
 
 .locale-list>span {
-    margin-bottom : 5px;
+    margin-bottom : 10px;
     
 }
 

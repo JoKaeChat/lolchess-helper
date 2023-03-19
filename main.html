@@ -8,10 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>롤체도우미</title>
 </head>
-<body>
+<body class ="body-bg">
     
     <header class ="screen-header">
         <div class="screen-header__gnb">
+         <div class ="screen-header__gnb__container">
             <div class="screen-header__gnb__menu">
                 <a href="#" ><span class="bold white">DAK.GG</span></a>
                 <div class="divider"></div>
@@ -39,12 +40,14 @@
                     <span>영어</span>
                 </div>
             </div>
+         </div> 
         </div>
 
         <div class="screen-header__middle">
+           <div class ="screen-header__middle__container">
             <div class="screen-header__middle__column">
-                <button class ="screen-header__middle__filter fa-lg">
-                    <i class="fa-solid fa-filter"></i>
+                <button class ="screen-header__middle__filter">
+                    <img class = "TFT" src="https://images.contentstack.io/v3/assets/blt0eb2a2986b796d29/bltf3a04d9af77c8483/6216af02d4d6d062eec35cb3/TFT_Logomark_Gold.png?&height=50&disable=upscale"/>
                     <i class="fa-solid fa-caret-down white fa-xs filter-rotate"></i>
                 </button>
                 <div class="screen-header__middle__filter__list dropdown-list hidden">
@@ -67,12 +70,13 @@
                 </form>
             </div>          
             </div>
-
+           </div> 
         </div>
 
         <div class="screen-header__lnb">
-
-            <div class ="lnb-container__bg" ></div>
+          <div class = "screen-header__lnb__container">
+            <div class ="lnb-container__bg" >
+            </div>
             <div class ="lnb-container">
                 
               <div class ="lnb-container__part">
@@ -148,7 +152,7 @@
               </div>
 
             </div>
-
+          </div>
            
            
         </div>
@@ -192,11 +196,13 @@
     </div>
 
     <div class = "wallpaper">
-        
         <img src = "https://i.imgur.com/JAE95B6.jpg"/>
     </div>
+
+    
     
     <div class="item-filter">
+      <div class = "container">
         <div class = "item-filter__title">
             <span>아이템</span>
            <button class = "clear" >초기화</button>
@@ -300,6 +306,10 @@
                             <span>무한의 대검</span>
                             </div>
                         </button>
+                        
+                    </div>
+                    <div class ="item-filter__container-row__container__icon-row">
+
                         <button class="item-button" onclick="filterSelection('inoic')">
                             <div class ="relative-img">
                             <img src="https://cdn.lolchess.gg/upload/images/items/IonicSpark_1640059091.png"/>
@@ -308,8 +318,7 @@
                             <span>이온 충격기</span>
                             </div>
                         </button>
-                    </div>
-                    <div class ="item-filter__container-row__container__icon-row">
+
                         <button class="item-button" onclick="filterSelection('gargoyle')">
                             <div class ="relative-img">
                             <img src="https://cdn.lolchess.gg/upload/images/items/IronWill_AnyIyxtEcc5fby5mgL1NNIwzm76wiG0yxwcPQ7nj.png"/>
@@ -397,6 +406,10 @@
                             <div class = "item-name">
                             <span>루난의 허리케인</span></div>
                         </button>
+                       
+                    </div>
+
+                    <div class ="item-filter__container-row__container__icon-row">
                         <button class="item-button" onclick="filterSelection('shojin')">
                             <div class ="relative-img">
                              <img src="https://cdn.lolchess.gg/upload/images/items/SpearofShojin_1669258937-spear_of_shojin.png"/>
@@ -411,9 +424,7 @@
                             <div class = "item-name">
                             <span>스태틱</span></div>
                         </button>
-                    </div>
 
-                    <div class ="item-filter__container-row__container__icon-row">
                         <button class="item-button" onclick="filterSelection('sunfire')">
                             <div class ="relative-img">
                             <img src="https://cdn.lolchess.gg/upload/images/items/SunfireCape_1640059158.png"/>
@@ -442,20 +453,7 @@
                             <div class = "item-name">
                             <span>워모그의 갑옷</span></div>
                         </button>
-                        <button class="item-button" onclick="filterSelection('warmog')">
-                            <div class ="relative-img">
-                            <img src="https://cdn.lolchess.gg/upload/images/items/3083_C5Y1EvfU08Ug9wCaCJTEp2hNRjh5zSkq9eoY97Uc.png"/>
-                            </div>
-                            <div class = "item-name">
-                            <span>워모그의 갑옷</span></div>
-                        </button>
-                        <button class="item-button" onclick="filterSelection('warmog')">
-                            <div class ="relative-img">
-                            <img src="https://cdn.lolchess.gg/upload/images/items/3083_C5Y1EvfU08Ug9wCaCJTEp2hNRjh5zSkq9eoY97Uc.png"/>
-                            </div>
-                            <div class = "item-name">
-                            <span>워모그의 갑옷</span></div>
-                        </button>
+                        
                         <button class="item-button" onclick="filterSelection('zeke')">
                             <div class ="relative-img">
                             <img src="https://cdn.lolchess.gg/upload/images/items/ZekesHerald_1640059135.png"/>
@@ -586,6 +584,11 @@
                         <div class = "item-name">
                         <span>무법자</span></div>
                     </button>
+                    
+
+                 </div>
+
+                 <div class="item-filter__container-row__container__icon-row">
                     <button class="item-button" onclick="filterSelection('brawler')">
                         <div class ="relative-img">
                         <img src="https://cdn.lolchess.gg/upload/images/items/BrawlerEmblemItem_1668223065-Brawler.png"/>
@@ -594,9 +597,6 @@
                         <span>싸움꾼</span></div>
                     </button>
 
-                 </div>
-
-                 <div class="item-filter__container-row__container__icon-row">
                     <button class="item-button" onclick="filterSelection('duelist')">
                         <div class ="relative-img">
                         <img src="https://cdn.lolchess.gg/upload/images/items/DuelistEmblemItem_1668222995-Duelist.png"/>
@@ -657,12 +657,12 @@
                 </div>
             </div>
         </div>
-
-
-        </div>
+      </div>
     </div>
 
     <div class ="combination-container">
+
+     <div class ="container">
       <div class ="combination blue gadgeteen active">  
             <div class="combination-title">
                 <span>기계유망주 조이 누누</span>
@@ -702,7 +702,8 @@
                 </div>
             </div>
        </div>
-       
+      
+     
        <div class ="combination blue heart active">  
         <div class="combination-title">
             <span>선의 조이 소라카</span>
@@ -757,7 +758,7 @@
 
             </div>
         </div>
-   </div>
+   
 
        <div class ="combination shojin animal-squad active">  
         
@@ -778,11 +779,9 @@
                 <div class ="combination-screen__column">
 
                 </div>
-
             </div>
-        
        </div>
-
+     </div>
     </div>
 
     <script src="https://kit.fontawesome.com/4315a69b3d.js" crossorigin="anonymous"> </script>

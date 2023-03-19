@@ -2,6 +2,16 @@ let searches = [];
 const SEARCH_KEY = "search";
 const x= document.getElementsByClassName("combination");
 
+const U= document.getElementsByClassName("item-button");
+
+
+function V(){
+    console.log("hello");
+}
+U.addEventListener("click",V);
+
+
+
 function saveSEarches(){
     localStorage.setItem(SEARCH_KEY,JSON.stringify(searches));
 }

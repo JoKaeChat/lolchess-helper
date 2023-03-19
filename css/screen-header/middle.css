@@ -1,11 +1,17 @@
 .screen-header__middle{
+     border-bottom : 1px solid var(--gray);
+}
+
+.screen-header__middle__container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     position : relative;
     padding : 15px;
-    border-bottom : 1px solid var(--gray);
+   
     flex-shrink: 0;
+    margin : 0 auto;
+    width : 1140px;
 }
 
 .screen-header__middle__filter{
@@ -20,10 +26,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border : none;
 }
 
 .screen-header__middle__column{
     display: flex;
+}
+
+.TFT{
+    width :25px;
+    height : 25px;
 }
 
 .screen-header__middle__filter__list{
@@ -133,7 +145,7 @@
     position : absolute;
     z-index : 20;
     top : 33%;
-    left : 33%;
+    left : 40%;
     border : 1px solid var(--gray);
     border-radius : 5px;
     background-color: white;
