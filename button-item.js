@@ -2,15 +2,46 @@ let searches = [];
 const SEARCH_KEY = "search";
 const x= document.getElementsByClassName("combination");
 
-const U= document.getElementsByClassName("item-button");
+const itemBtn = document.getElementsByClassName("item-button");
+
+function V(event){
+    event.preventDefault();
+    const parent = event.currentTarget;
+    const div = document.createElement("div");
+    const span = document.createElement("span");
+    const svg = document.createElement("svg");
+
+    div.className = "checkBoxBg";
+    span.className = 'checkCircleGreen';
+    div.appendChild(span);
+    span.appendChild(svg);
+    svg.xmls = 'http://www.w3.org/2000/svg';
+    svg.viewBox = '0 0 14 15';
+    svg.width ='100%';
+    svg.height = '100%';
+    
 
 
-function V(){
-    console.log("hello");
+    if(parent.classList.length === 1){
+        /*console.log(parent.children);*/
+         parent.appendChild(div);
+         
+         parent.classList.add('checked');
+         
+    }
+    else{
+        /*console.log(parent.children);*/
+        parent.classList.remove('checked');
+        parent.children[2].remove();
+        
+    }
+    
 }
-U.addEventListener("click",V);
 
 
+for(let i=0;i<itemBtn.length;i++){
+    itemBtn[i].addEventListener('click',V);
+}
 
 function saveSEarches(){
     localStorage.setItem(SEARCH_KEY,JSON.stringify(searches));

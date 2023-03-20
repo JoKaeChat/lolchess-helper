@@ -63,6 +63,7 @@
     cursor : pointer;
     margin-bottom : 10px;
     box-sizing: border-box;
+    position : relative;
 }
 
 .relative-img{
@@ -76,9 +77,6 @@
 }
 
 
-.item-button:active{
-    border : 2px solid red;
-}
 
 .item-name{
     font-size : 12px;
@@ -90,3 +88,18 @@
     text-align : center;
 }
 
+
+.checkBoxBg{
+    position : absolute;
+    top : 0;
+    left : 23px;
+    width : 37px;
+    height : 37px;
+    border-radius : 5px;
+    background-color: rgba(0,0,0,.6);    
+}
+
+
+.checkCircleGreen{
+    color : rgb(17, 178, 136);   
+}
